@@ -1,0 +1,23 @@
+<web-app>
+<display-name>webapps-caching</display-name>
+-
+	<servlet>
+<servlet-name>ServCache</servlet-name>
+<servlet-class>samples.webapps.caching.ServCache</servlet-class>
+<load-on-startup>0</load-on-startup>
+</servlet>
+-
+	<servlet-mapping>
+<servlet-name>ServCache</servlet-name>
+<url-pattern>/ServCache</url-pattern>
+</servlet-mapping>
+-
+	<session-config>
+<session-timeout>30</session-timeout>
+</session-config>
+-
+	<taglib>
+<taglib-uri>/com/sun/web/taglibs/cache</taglib-uri>
+<taglib-location>/WEB-INF/sun-web-cache.tld</taglib-location>
+</taglib>
+</web-app>
